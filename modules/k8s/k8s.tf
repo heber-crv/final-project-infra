@@ -24,8 +24,10 @@ resource "kubernetes_deployment" "deployment" {
 
       spec {
         container {
-          name              = "nginx"
-          image             = "nginx:latest"
+#          name              = "nginx"
+#          image             = "nginx:latest"
+          name="zammad"
+          image="zammad/zammad:latest"
           image_pull_policy = "IfNotPresent"
 
 /*          liveness_probe {
@@ -56,9 +58,21 @@ resource "kubernetes_service" "service" {
       test = "MyExampleApp"
     }
     port {
-#      name        = "http"
+      name="http"
       port        = 80
       target_port = 80
+    }
+
+    port {
+      name="test"
+      port        = 8080
+      target_port = 8080
+    }
+
+    port {
+      name="sql"
+      port        = 5432
+      target_port = 5432
     }
 
     type = "LoadBalancer"

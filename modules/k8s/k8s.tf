@@ -38,7 +38,6 @@ resource "kubernetes_deployment" "deployment" {
                 value = "Awesome"
               }
             }
-
             initial_delay_seconds = 3
             period_seconds        = 3
           }*/
@@ -50,14 +49,14 @@ resource "kubernetes_deployment" "deployment" {
 
 resource "kubernetes_service" "service" {
   metadata {
-    name = "nginx"
+    name = "zammad-deployment"
   }
   spec {
     selector = {
       test = "MyExampleApp"
     }
     port {
-      name        = "http"
+#      name        = "http"
       port        = 80
       target_port = 80
     }

@@ -6,6 +6,7 @@ module "azure" {
   source        = "./modules/azure/"
   client_id     = var.client_id
   client_secret = var.client_secret
+  ssh_key       = var.ssh_key
 }
 
 module "k8s" {

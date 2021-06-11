@@ -24,13 +24,13 @@ resource "kubernetes_deployment" "deployment" {
 
       spec {
         container {
-#          name              = "nginx"
-#          image             = "nginx:latest"
-          name="zammad"
-          image="zammad/zammad:latest"
+          #          name              = "nginx"
+          #          image             = "nginx:latest"
+          name              = "zammad"
+          image             = "zammad/zammad:latest"
           image_pull_policy = "IfNotPresent"
 
-/*          liveness_probe {
+          /*          liveness_probe {
             http_get {
               path = "/nginx_status"
               port = 80
@@ -58,19 +58,19 @@ resource "kubernetes_service" "service" {
       test = "MyExampleApp"
     }
     port {
-      name="http"
+      name        = "http"
       port        = 80
       target_port = 80
     }
 
     port {
-      name="test"
+      name        = "test"
       port        = 8080
       target_port = 8080
     }
 
     port {
-      name="sql"
+      name        = "sql"
       port        = 5432
       target_port = 5432
     }

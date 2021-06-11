@@ -32,12 +32,12 @@ resource "azurerm_kubernetes_cluster" "cluster1" {
   dns_prefix          = "dns1"
 
   default_node_pool {
-    name                  = "default"
-    vm_size               = "Standard_D2_v2"
-    type                  = "VirtualMachineScaleSets"
-    node_count            = 1
-#    enable_node_public_ip = true
-#    vnet_subnet_id        = azurerm_subnet.main-subnet.id
+    name       = "default"
+    vm_size    = "Standard_D2_v2"
+    type       = "VirtualMachineScaleSets"
+    node_count = 1
+    #    enable_node_public_ip = true
+    #    vnet_subnet_id        = azurerm_subnet.main-subnet.id
   }
 
   identity {
@@ -54,7 +54,7 @@ resource "azurerm_kubernetes_cluster" "cluster1" {
   network_profile {
     network_plugin    = "kubenet"
     load_balancer_sku = "Standard"
- /*   load_balancer_profile {
+    /*   load_balancer_profile {
       outbound_ip_address_ids = [azurerm_public_ip.cluster-public-ip.id]
     }*/
   }

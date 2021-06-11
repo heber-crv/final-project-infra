@@ -3,3 +3,4 @@ variable "client_id" {}
 variable "client_secret" {}
 variable "tenant_id" {}
 variable "ssh_key" {}
+#variable "blob_key" {}

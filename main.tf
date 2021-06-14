@@ -9,10 +9,10 @@ module "azure" {
   ssh_key       = var.ssh_key
 }
 
-module "k8s" {
+/*module "k8s" {
   source                 = "./modules/k8s/"
   host                   = module.azure.host
   client_certificate     = base64decode(module.azure.client_certificate)
   client_key             = base64decode(module.azure.client_key)
   cluster_ca_certificate = base64decode(module.azure.cluster_ca_certificate)
-}
+}*/

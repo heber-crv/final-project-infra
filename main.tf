@@ -7,7 +7,10 @@ module "azure" {
   client_id     = var.client_id
   client_secret = var.client_secret
   ssh_key       = var.ssh_key
+  rg_name       = data.azurerm_resource_group.myRG.name
+  rg_location   = data.azurerm_resource_group.myRG.location
 }
+
 
 /*module "k8s" {
   source                 = "./modules/k8s/"

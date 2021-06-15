@@ -1,6 +1,8 @@
+/*
 data "azurerm_resource_group" "myRG" {
   name = "heber-cervantes"
 }
+*/
 
 /*resource "azurerm_virtual_network" "main-vnet" {
   name                = "vnet1"
@@ -26,9 +28,11 @@ data "azurerm_resource_group" "myRG" {
 }*/
 
 resource "azurerm_kubernetes_cluster" "cluster1" {
-  name                = "cluster1"
-  location            = data.azurerm_resource_group.myRG.location
-  resource_group_name = data.azurerm_resource_group.myRG.name
+  name = "cluster1"
+  #  location            = data.azurerm_resource_group.myRG.location
+  location = var.rg_location
+  #  resource_group_name = data.azurerm_resource_group.myRG.name
+  resource_group_name = var.rg_name
   dns_prefix          = "dns1"
 
   default_node_pool {

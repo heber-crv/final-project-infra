@@ -122,7 +122,9 @@ Azure supports a wide range of programming languages, frameworks, operating syst
 
    1. `terraform apply`
 
-
+- **Review the infrastructure created in Azure Portal**
+    
+    ![infra](resources/infra.png)
 
 ### Deploy App in arquitecture Using Pipeline Github Actions
 
@@ -165,6 +167,30 @@ Azure supports a wide range of programming languages, frameworks, operating syst
     This will activate the deploy of the system through github actions 
 
     ![secrets](resources/actions.png)
+
+     When the pipeline has successfully completed it is time to connect to the cluster and get the service IP to view the application.
+
+- **Connect to the Cluster**
+
+    ![secrets](./cluster.png)
+
+    Commands
+
+    `az account set --subscription your Subscription ID`
+
+    `az aks get-credentials --resource-group your_rg --name cluster1`
+
+- **Get the service IP**
+
+    ![svc](resources/svc.png)
+
+    Command 
+
+    `kubectl get svc`
+
+    Now you will be able to view the Application by entering the IP in any browser.
+
+    ![zammad](resources/zammad.png)
 
 ## Diagrams
 How does the project works? :

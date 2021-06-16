@@ -172,7 +172,7 @@ Azure supports a wide range of programming languages, frameworks, operating syst
 
 - **Connect to the Cluster**
 
-    ![secrets](./cluster.png)
+    ![secrets](resources/cluster.png)
 
     Commands
 

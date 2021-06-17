@@ -1,11 +1,3 @@
-variable "client_id" {}
-variable "client_secret" {}
-variable "ssh_key" {
-  type        = string
-  description = "The public SSH key to connect to the cluster"
-  sensitive   = true
-}
-
 variable "rg_name" {
   type        = string
   description = "The name of the Azure resource group"

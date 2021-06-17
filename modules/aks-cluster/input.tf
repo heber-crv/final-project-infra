@@ -1,5 +1,8 @@
-variable "client_id" {}
-variable "client_secret" {}
+variable "subnet_id" {
+  type        = string
+  description = "The ID of the subnet resource"
+}
+
 variable "ssh_key" {
   type        = string
   description = "The public SSH key to connect to the cluster"

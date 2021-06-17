@@ -210,13 +210,13 @@ The Terraform and GitHub features that we use in the project  are **free**.
 
 ## More resources 
 
-[Zammad's repository forked by the team](https://github.com/heber-crv/zammad). 
+[Zammad's Main Repository](https://github.com/zammad/zammad).  
 
 [Zammad's repository forked by the team](https://github.com/heber-crv/zammad).  
 
 [Zammad's Documentation](https://admin-docs.zammad.org/en/latest/index.html).  
 
-[Zammad's Main Repository](https://github.com/zammad/zammad).  
+
 
 [Zammad's User Documentation](https://github.com/zammad/zammad-user-documentation).  
 

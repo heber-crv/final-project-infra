@@ -207,3 +207,10 @@ According to their [website](https://azure.microsoft.com/en-us/pricing/details/k
 You can explore their pricing options in the website provided.
 
 The Terraform and GitHub features that we use in the project  are **free**.
+
+More resources:
+[Zammad's repository forked by the team](https://github.com/heber-crv/zammad)_
+[Zammad's Documentation](https://admin-docs.zammad.org/en/latest/index.html)
+[Zammad's Main Repository](https://github.com/zammad/zammad)
+[Zammad's User Documentation](https://github.com/zammad/zammad-user-documentation)
+

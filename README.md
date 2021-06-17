@@ -3,19 +3,19 @@
 # DoU University Final Project
 
 ## Stack
-- Kubernetes  
+- [Kubernetes](https://kubernetes.io/docs/home/)  
 A portable, extensible, open-source platform for managing containerized workloads and services.
-- GitHub Actions  
+- [GitHub Actions](https://docs.github.com/en/actions/reference)  
 A GitHub feature that connects all of your tools to automate every step of your development workflow.
-- Terraform  
+- [Terraform](https://www.terraform.io/docs/index.html)  
 It is an example of infraestructure as code (IaC).Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently.
-- Azure  
+- [Azure](https://docs.microsoft.com/en-us/azure/?product=featured)  
 It is an example of a platform as a service (PaaS). It  is designed to support applications that are scalable, reliable, and inexpensive to operate.
-- Ruby 2.4.2  
+- [Ruby](https://docs.ruby-lang.org/en/)  
 Ruby is an interpreted, high-level, general-purpose programming language.
-- Database: PostgresSQL (supported by default), MariaDB or MySQL  
+- Database: [PostgresSQL](https://www.postgresql.org/docs/) (supported by default), [MariaDB](https://mariadb.com/kb/en/documentation/) or [MySQL](https://dev.mysql.com/doc/)  
 An organized collection of structured information, or data, typically stored electronically in a computer system.
-- Reverse Proxy: Nginx (supported by default) or Apache  
+- Reverse Proxy: [Nginx](http://nginx.org/en/docs/) (supported by default) or [Apache](https://httpd.apache.org/docs/)  
 These are popular web servers used to deliver web pages to a user's browser.
 
 ## Business Case
@@ -205,4 +205,4 @@ According to their [website](https://azure.microsoft.com/en-us/pricing/details/k
 
 You can explore their pricing options in the website provided.
 
-The Terraform and GitHub features that we use in these project  are **free**.
+The Terraform and GitHub features that we use in the project  are **free**.

@@ -23,5 +23,3 @@ variable "ssh_key" {
   description = "The public SSH key to connect to the cluster"
   sensitive   = true
 }
-
-#variable "blob_key" {}

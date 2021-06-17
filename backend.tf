@@ -4,6 +4,5 @@ terraform {
     storage_account_name = "zammadinfra"
     container_name       = "iac"
     key                  = "terraform.tfstate"
-    #    access_key           = var.blob_key
   }
 }

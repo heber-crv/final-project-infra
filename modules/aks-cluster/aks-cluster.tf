@@ -1,14 +1,14 @@
 resource "azurerm_kubernetes_cluster" "cluster1" {
-  name                = "cluster2"
+  name                = "cluster1"
   location            = var.rg_location
   resource_group_name = var.rg_name
   dns_prefix          = "dns1"
 
   default_node_pool {
-    name       = "default"
-    vm_size    = "Standard_D2_v2"
-    type       = "VirtualMachineScaleSets"
-    node_count = 1
+    name           = "default"
+    vm_size        = "Standard_D2_v2"
+    type           = "VirtualMachineScaleSets"
+    node_count     = 1
     vnet_subnet_id = var.subnet_id
   }
 
@@ -24,7 +24,13 @@ resource "azurerm_kubernetes_cluster" "cluster1" {
   }
 
   network_profile {
-    network_plugin = "azure"
+    network_plugin    = "azure"
     load_balancer_sku = "Standard"
+    /*
+    load_balancer_profile {
+      outbound_ip_prefix_ids = [var.public_ip_id]
+      outbound_ip_address_ids = [var.public_ip_id]
+    }
+    */
   }
 }

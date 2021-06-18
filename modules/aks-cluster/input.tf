@@ -3,6 +3,11 @@ variable "subnet_id" {
   description = "The ID of the subnet resource"
 }
 
+variable "public_ip_id" {
+  type        = string
+  description = "The ID of the public IP resource"
+}
+
 variable "ssh_key" {
   type        = string
   description = "The public SSH key to connect to the cluster"

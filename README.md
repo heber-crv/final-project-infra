@@ -3,23 +3,23 @@
 # DoU University Final Project
 
 ## Stack
-- Kubernetes  
+- [Kubernetes](https://kubernetes.io/docs/home/)  
 A portable, extensible, open-source platform for managing containerized workloads and services.
-- GitHub Actions  
+- [GitHub Actions](https://docs.github.com/en/actions/reference)  
 A GitHub feature that connects all of your tools to automate every step of your development workflow.
-- Terraform  
+- [Terraform](https://www.terraform.io/docs/index.html)  
 It is an example of infraestructure as code (IaC).Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently.
-- Azure  
+- [Azure](https://docs.microsoft.com/en-us/azure/?product=featured)  
 It is an example of a platform as a service (PaaS). It  is designed to support applications that are scalable, reliable, and inexpensive to operate.
-- Ruby 2.4.2  
+- [Ruby](https://docs.ruby-lang.org/en/)  
 Ruby is an interpreted, high-level, general-purpose programming language.
-- Database: PostgresSQL (supported by default), MariaDB or MySQL  
+- Database: [PostgresSQL](https://www.postgresql.org/docs/) (supported by default), [MariaDB](https://mariadb.com/kb/en/documentation/) or [MySQL](https://dev.mysql.com/doc/)  
 An organized collection of structured information, or data, typically stored electronically in a computer system.
-- Reverse Proxy: Nginx (supported by default) or Apache  
+- Reverse Proxy: [Nginx](http://nginx.org/en/docs/) (supported by default) or [Apache](https://httpd.apache.org/docs/)  
 These are popular web servers used to deliver web pages to a user's browser.
 
 ## Business Case
-All companies need a way to handle all the requests and issues made by either their own employees or their costumers.  
+All companies need a way to handle all the requests and issues made by ,either their own employees, or their costumers.  
 Every organization inside the company has different requests, it can be from an employee asking for a new laptop to the IT Department, or it can be an employee asking Human Resources for a sick day.   
 The number of requests and issues raised in each company can become too overwhelming, the company needs a way to deal with these requests in an efficient and organized way.   
 **Zammad** is is a web-based, open source user support/ticketing solution. We found that Zammad offered a huge number of important features that can be found [here.](https://zammad.com/en/product/features)
@@ -29,11 +29,11 @@ The number of requests and issues raised in each company can become too overwhel
 For our project, we needed to deploy Zammad with the help of Kubernetes, Terraform and a cloud provider like Azure.   
 But why do we use kubernetes?  
 First of all, Zammad uses containers containers can be a great wat to package and deploy services but when it's time to run these containers in production, we can end up with a huge number of containers, and all of these need to be managed, connected, deployed, etc.  
- A lot of developers would be needed to do all of this. This is when Kubernetes becomes an essential tool, kubernetes is basucally a container schedyler, it automates the deployment and management of all these containers. It saves thhe comapnies time and man hours.
+ A lot of developers would be needed to do all of this. This is when Kubernetes becomes an essential tool, kubernetes is basucally a container schedyler, it automates the deployment and management of all these containers. It saves thhe companies time and man hours.
 Now, why use an IaC tool like terraform?  
 With terraform we are able to create and destroy infraestructure very quickly, the efforts of creating and deleting the infraestructure we are using is reduced to a single command (plan and destroy).
 And finally, why use Azure?  
-The adavantages for migrating to clod are well [known](https://www.forbes.com/sites/forbestechcouncil/2021/03/12/why-migrate-to-the-cloud-the-basics-benefits-and-real-life-examples/), but why choose Azure?  
+The adavantages for migrating to cloud are well [known](https://www.forbes.com/sites/forbestechcouncil/2021/03/12/why-migrate-to-the-cloud-the-basics-benefits-and-real-life-examples/), but why choose Azure?  
 Azure supports a wide range of programming languages, frameworks, operating systems, databases and devices. Unlike other cloud services, Azure has an excellent documentation, which makes it easier for their costumers to understand what to do. Here are some other features:
 - Scalability and Ductility
 - Integrated Environment with other Microsoft tools
@@ -193,9 +193,10 @@ Azure supports a wide range of programming languages, frameworks, operating syst
     ![zammad](resources/zammad.png)
 
 ## Diagrams
-How does the project works? :
+Here are some diagrams to visualize what we explained before.
+**How does the project works?** :
 ![](resources/pro.png)
-The infraestructure of the project:
+**The infraestructure of the project** :
 ![](resources/infraD.png)
 ## Costs
 According to their [website](https://azure.microsoft.com/en-us/pricing/details/kubernetes-service/), 
@@ -205,4 +206,17 @@ According to their [website](https://azure.microsoft.com/en-us/pricing/details/k
 
 You can explore their pricing options in the website provided.
 
-The Terraform and GitHub features that we use in these project  are **free**.
+The Terraform and GitHub features that we use in the project  are **free**.
+
+## More resources 
+
+[Zammad's Main Repository](https://github.com/zammad/zammad).  
+
+[Zammad's repository forked by the team](https://github.com/heber-crv/zammad).  
+
+[Zammad's Documentation](https://admin-docs.zammad.org/en/latest/index.html).  
+
+
+
+[Zammad's User Documentation](https://github.com/zammad/zammad-user-documentation).  
+

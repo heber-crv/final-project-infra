@@ -29,7 +29,7 @@ The number of requests and issues raised in each company can become too overwhel
 For our project, we needed to deploy Zammad with the help of Kubernetes, Terraform and a cloud provider like Azure.   
 But why do we use kubernetes?  
 First of all, Zammad uses containers containers can be a great wat to package and deploy services but when it's time to run these containers in production, we can end up with a huge number of containers, and all of these need to be managed, connected, deployed, etc.  
- A lot of developers would be needed to do all of this. This is when Kubernetes becomes an essential tool, kubernetes is basucally a container schedyler, it automates the deployment and management of all these containers. It saves thhe companies time and man hours.
+ A lot of developers would be needed to do all of this. This is when Kubernetes becomes an essential tool, kubernetes is basucally a container scheduler, it automates the deployment and management of all these containers. It saves the companies time and man hours.
 Now, why use an IaC tool like terraform?  
 With terraform we are able to create and destroy infraestructure very quickly, the efforts of creating and deleting the infraestructure we are using is reduced to a single command (plan and destroy).
 And finally, why use Azure?  
